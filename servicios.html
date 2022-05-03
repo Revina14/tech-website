@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+    <script
+      src="https://kit.fontawesome.com/80c53e288e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/logo updated.jpg" alt=""
+        /></a>
+
+        <a class="toggle-button" href="#">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <div class="servicios-headerimg"><h1>Sobre Nosotros</h1></div>
+    <!-----------------Servicios---------------------->
+    <section class="servicios">
+      <div class="servicios-container">
+        <img src="images/service 1.svg" alt="" />
+        <h1>Desarrollo de Software a Medida</h1>
+        <p>
+          Creamos herramientas informáticas basadas <br />
+          en las necesidades particulares de su empresa. <br />
+          Nuestro equipo de desarrollo analiza el giro de negocio <br />
+          de la compañía con el fin de optimizar los procesos. En base al
+          análisis, creamos soluciones de alta calidad que impactan
+          <br />
+          de forma positiva los resultados de la empresa
+        </p>
+      </div>
+      <div class="servicios-container">
+        <img src="images/service2.svg" alt="" />
+        <h1>Aplicaciones Móviles</h1>
+        <p>
+          El desarrollo de aplicaciones móviles es el conjunto de procesos y
+          procedimientos involucrados en la escritura <br />
+          de software para dispositivos informáticos pequeños e inalámbricos,
+          como teléfonos inteligentes y otros dispositivos portátiles.
+          <strong>
+            <br />
+            Aplicaciones nativas. <br />
+            Aplicaciones híbridas. <br />
+            Aplicaciones web <br />
+            Aplicaciones encapsuladas.
+          </strong>
+        </p>
+      </div>
+      <div class="servicios-container">
+        <img src="images/service4.svg" alt="" />
+        <h1>Automatización de Procesos</h1>
+        <p>
+          La automatización de procesos es el uso de tecnología para <br />
+          automatizar tareas repetibles del día a día. <br />
+          Acelera la forma en que se realiza el trabajo al enrutar la
+          información <br />
+          a la persona adecuada en el momento adecuado a través de reglas <br />
+          y acciones definidas por el usuario. BPA ayuda a las organizaciones a
+          optimizar <br />
+          procesos como la incorporación de empleados, las cuentas <br />
+          por pagar, la gestión de contratos y más.
+        </p>
+      </div>
+      <div class="servicios-container container-last">
+        <img src="images/service3.svg" alt="" />
+        <h1>Tiendas en Línea</h1>
+        <p>
+          Desarrollamos plataformas de comercio electrónico <br />
+          que te ayudan a incrementar tus ventas. <br />
+          Implementamos pasarelas de pago, carritos <br />
+          de compra, catálogos de productos digitales, etc.
+        </p>
+      </div>
+    </section>
+
+    <!-------------------Footer-------------------------->
+
+    <section class="footer">
+      <img src="images/footer logo.svg" alt="" />
+      <div class="footer-container">
+        <h1>Teléfonos</h1>
+        <p>0987049916</p>
+        <p>0987689740</p>
+      </div>
+      <div class="footer-container">
+        <h1>Emails</h1>
+        <p>ceo@planit.com.ec</p>
+        <p>logistica@planit.com.ec</p>
+      </div>
+      <div class="footer-container">
+        <h1>Síguenos</h1>
+        <div class="social-media">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <!-----------------JAVASCRIPT--------------->
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("nav-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

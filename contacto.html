@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/80c53e288e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sub-header3">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/logo updated.jpg" alt=""
+        /></a>
+
+        <a class="toggle-button" href="#">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <div class="sub-image"><h1>Contacto</h1></div>
+
+    <section class="contacto-container">
+      <div class="contacto-wrap">
+        <div class="contacto-inside">
+          <h1>Direccion</h1>
+          <p>
+            Av. Rio Pastaza <br />
+            y Av. Rio Quijos Santo Domingo, <br />
+            Ecuador
+          </p>
+        </div>
+        <div class="contacto-inside">
+          <h1>Telefonos</h1>
+          <p>
+            0987049916 <br />
+            0987689740
+          </p>
+        </div>
+        <div class="contacto-inside">
+          <h1>Email</h1>
+          <p>
+            ceo@planit.com.ec <br />
+            logistica@planit.com.ec
+          </p>
+        </div>
+      </div>
+
+      <div class="contacto-wrap">
+        <form id="contacto-message" action="">
+          <label for="contacto-message">Contacto</label>
+          <p>Estamos atentos a sus inquietudes y requerimientos</p>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea name="" id="" cols="10" rows="10">Message</textarea>
+        </form>
+      </div>
+    </section>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.78299722534!2d-79.1815306852467!3d-0.241096499824092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d54786afea38a3%3A0xe8b3bb3b17141e1f!2sPlanit%20ERP%2C%20Desarrollo%20de%20Software%20a%20la%20Medida!5e0!3m2!1sen!2sru!4v1651327204516!5m2!1sen!2sru"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-------------------Footer-------------------------->
+
+    <section class="footer">
+      <img src="images/footer logo.svg" alt="" />
+      <div class="footer-container">
+        <h1>Teléfonos</h1>
+        <p>0987049916</p>
+        <p>0987689740</p>
+      </div>
+      <div class="footer-container">
+        <h1>Emails</h1>
+        <p>ceo@planit.com.ec</p>
+        <p>logistica@planit.com.ec</p>
+      </div>
+      <div class="footer-container">
+        <h1>Síguenos</h1>
+        <div class="social-media">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <!-----------------JAVASCRIPT--------------->
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("nav-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

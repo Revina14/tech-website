@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <script
+      src="https://kit.fontawesome.com/80c53e288e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/logo updated.jpg" alt=""
+        /></a>
+
+        <a class="toggle-button" href="#">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="front-design">
+        <div data-aos="zoom-in-right"  data-aos-duration="1000" >
+          <img src="images/robotina 1.svg" alt="" />
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000"  >
+          <p>Desarrollo de Software</p>
+
+          <p>
+            Brindamos Soluciones <br />
+            Tecnologicas de Alto Nivel
+          </p>
+          <form class="contact-button" action="">
+            <input type="button" value="contactenos" />
+          </form>
+        </div>
+      </section>
+    </section>
+ <!---------------EXPLORE-------------->
+ 
+ <section class="explore">
+
+  <div class="explore-products">
+    
+      <div class="products-container">
+        <div>
+          <h2>Planit ERP</h2>
+        <p>
+          Sistema integral  de<br> planificación de recursos<br> empresariales
+        </p>
+        <a href="#">explore</a>
+        </div>
+        <div><img src="images/Macbook Pro Tilted Screen Mockup.png" alt=""></div>
+      </div>
+    
+      <div class="sales-container">
+        <div>
+          <h2>Planit Sale</h2>
+        <p>
+          App movil para gestionar ventas<br> de productos y servicios
+        </p>
+        
+      <a href="#">explore</a>
+        </div>
+        <div><img src="images/iPad 9.7 Inch.png" alt=""></div>
+      </div>
+    
+  </div>
+  <!---------------Service section------------------------>
+  <section class="service"> 
+<h1>Nuestros Servicios</h1>
+<div class="row">
+  <div class="service-containers" data-aos="zoom-in-right" data-aos-duration="1000" >
+    <img src="images/service 1.svg" alt="">
+  <h2>Desarrollo de <br> Software</h2>
+  </div>
+  <div class="service-containers" data-aos="zoom-in-right"data-aos-duration="1000">
+    <img src="images/service2.svg" alt="">
+    <h2>Apps <br> Móviles</h2>
+  </div>
+  <div class="service-containers"data-aos="zoom-in-left" data-aos-duration="1000" >
+    <img src="images/service3.svg" alt="">
+    <h2>Tiendas en línea (E-commerce)</h2>
+  </div>
+  <div class="service-containers" data-aos="zoom-in-left" data-aos-duration="1000">
+    <img src="images/service4.svg" alt="">
+    <h2>Automatización de Procesos</h2>
+  </div>
+</div>
+<button class="button-minor">Ver servicios</button>
+  </section>
+
+<!-------------------Planning Information Technology------------------->
+  <section class="pit">
+<div class="pit-wrap">
+  <h1>Planit</h1>
+  <h2>Planing Information Technology</h2>
+  <p>Somos una empresa dedicada al desarrollo <br> de software desde el 2012, nuestros productos <br> son totalmente adaptados a la necesidad de cada <br> empresa. Contamos con personal <br> capacitados en distintas areas  tecnológicas.</p>
+  
+</div>
+<div class="pit-wrap"><img src="images/pit.png" alt=""></div>
+  </section>
+<!-------------------Contacto------------------->
+<section class="contacto">
+<h1>Contacto</h1>
+<p>Estamos prestos para brindar la asesoría <br>  necesaria para identificar las mejores soluciones tecnológicas que <br> se adapten a las necesidades de su negocio.</p>
+<form  action="">
+  <input type="text" placeholder="Nombre">
+  <input type="email" placeholder="Email">
+  <textarea cols="30" rows="10">Mensaje</textarea>
+  <button>Enviar</button>
+</form>
+</section>
+
+<!-------------------Footer-------------------------->
+
+<section class="footer">
+  <img src="images/footer logo.svg" alt="">
+  <div class="footer-container">
+    <h1>Teléfonos</h1>
+    <p>0987049916</p>
+    <p>0987689740</p>
+  </div>
+  <div class="footer-container">
+    <h1>Emails</h1>
+    <p> ceo@planit.com.ec</p>
+    <p> logistica@planit.com.ec</p>
+  </div>
+  <div class="footer-container">
+    <h1>Síguenos</h1>
+    <div class="social-media">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+  </div>
+</section>
+    <!-----------------JAVASCRIPT--------------->
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("nav-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
